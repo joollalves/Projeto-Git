@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jpigo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-04 08:26:27 "/>
+        <attribute name="created" value="anBpZ287REVTS1RPUC1BNDZWSk9HOzIwMjEtMDgtMDM7IjExOjEyOjA2ICI7Mjc4Mw=="/>
+        <attribute name="edited" value="anBpZ287REVTS1RPUC1BNDZWSk9HOzIwMjEtMDgtMDQ7IjA4OjI2OjI3ICI7MjsyOTA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nome, Sobrenome, Idade" type="String" array="False" size=""/>
+            <output expression="&quot;Digite seu nome: &quot;" newline="True"/>
+            <input variable="Nome"/>
+            <output expression="&quot;Digite seu sobrenome: &quot;" newline="True"/>
+            <input variable="Sobrenome"/>
+            <output expression="&quot;Sua Idade &#233;: &quot;" newline="True"/>
+            <input variable="Idade"/>
+            <output expression="&quot;Seu nome completo: &quot; &amp; Nome &amp; &quot; &quot; &amp; Sobrenome" newline="True"/>
+            <output expression="&quot;Possui&quot; &amp; &quot; &quot; &amp; Idade &amp; &quot; &quot; &amp; &quot;Anos&quot;" newline="True"/>
+            <output expression="&quot;Vamos ver se voc&#234; foi aprovado?&quot;" newline="True"/>
+            <declare name="PrimeiroSemestre, SegundoSemestre, TerceiroSemestre, QuartoSemestre, M&#233;dia" type="Real" array="False" size=""/>
+            <output expression="&quot; Sua nota do primeiro semestre: &quot;" newline="True"/>
+            <input variable="PrimeiroSemestre"/>
+            <output expression="&quot; Sua nota do segundo semestre: &quot;" newline="True"/>
+            <input variable="SegundoSemestre"/>
+            <output expression="&quot; Sua nota do terceiro semestre: &quot;" newline="True"/>
+            <input variable="TerceiroSemestre"/>
+            <output expression="&quot; Sua nota do quarto semestre: &quot;" newline="True"/>
+            <input variable="QuartoSemestre"/>
+            <assign variable="M&#233;dia" expression="(PrimeiroSemestre + SegundoSemestre + TerceiroSemestre + QuartoSemestre)/4"/>
+            <if expression="M&#233;dia &gt;=7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns!! Voc&#234; foi aprovado.&#13;&#10;Te vejo no terceiro ano.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; foi reprovado.&#13;&#10;Te vejo na recupera&#231;&#227;o&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
